@@ -20,6 +20,7 @@ before_build:
 build_script:
   - npm run lint
   - npm test
+  - npm run build
 
 test: off
 
