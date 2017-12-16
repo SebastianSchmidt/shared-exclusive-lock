@@ -12,10 +12,11 @@
   "bugs": {
     "url": "https://github.com/SebastianSchmidt/shared-exclusive-lock/issues"
   },
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
-    "test": "jest --config jest.config.json"
+    "test": "jest --config jest.config.json",
+    "build": "babel -d lib/ src/"
   },
   "standard": {
     "env": [
@@ -23,6 +24,7 @@
     ]
   },
   "devDependencies": {
+    "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-jest": "21.2.0",
     "babel-preset-env": "1.6.1",

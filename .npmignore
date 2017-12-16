@@ -1,0 +1,10 @@
+src/
+coverage/
+*.spec.js
+.npmignore
+.babelrc
+jest.config.json
+appveyor.yml
+.travis.yml
+*.log
+shared-exclusive-lock-*.tgz

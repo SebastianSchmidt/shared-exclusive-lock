@@ -1,3 +1,5 @@
 node_modules/
 coverage/
+lib/
 *.log
+shared-exclusive-lock-*.tgz
