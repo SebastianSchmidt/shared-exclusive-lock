@@ -1,0 +1,31 @@
+{
+  "name": "shared-exclusive-lock",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://github.com/SebastianSchmidt/shared-exclusive-lock",
+  "author": "Sebastian Schmidt <email@sebastian-schmidt.info>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianSchmidt/shared-exclusive-lock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SebastianSchmidt/shared-exclusive-lock/issues"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --config jest.config.json"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-jest": "21.2.0",
+    "babel-preset-env": "1.6.1",
+    "jest": "21.2.1",
+    "standard": "10.0.3"
+  }
+}
