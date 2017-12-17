@@ -45,3 +45,9 @@ test('a single read lock can only be released once', async () => {
   release()
   expect(lock.locked).toBe(true)
 })
+
+test('release lock throws Error when lock status is invalid', async () => {
+  const release = await lock.readLock()
+  lock._status = 123
+  expect(() => release()).toThrowError('Invalid status: 123')
+})

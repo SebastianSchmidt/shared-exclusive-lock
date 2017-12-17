@@ -36,5 +36,7 @@ const releaseLock = (lock) => {
     if (lock._readLocks === 0) {
       lock._status = NO_LOCK
     }
+  } else {
+    throw new Error('Invalid status: ' + lock._status)
   }
 }
