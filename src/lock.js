@@ -1,3 +1,5 @@
+import once from './once'
+
 export default class Lock {
   constructor () {
     this._status = NO_LOCK
@@ -12,23 +14,13 @@ export default class Lock {
     return new Promise((resolve, reject) => {
       this._status = READ_LOCK
       this._readLocks++
-      resolve(releaseLockOnce(this))
+      resolve(once(() => releaseLock(this)))
     })
   }
 }
 
 const NO_LOCK = 0
 const READ_LOCK = 1
-
-const releaseLockOnce = (lock) => {
-  let fn = () => releaseLock(lock)
-  return () => {
-    if (fn) {
-      fn()
-      fn = null
-    }
-  }
-}
 
 const releaseLock = (lock) => {
   if (lock._status === READ_LOCK) {
