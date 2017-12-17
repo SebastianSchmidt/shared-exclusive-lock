@@ -15,7 +15,7 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
-    "test": "jest --config jest.config.json",
+    "test": "jest --config jest.config.json src/",
     "build": "babel -d lib/ src/"
   },
   "standard": {
