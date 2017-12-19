@@ -1,7 +1,7 @@
 {
   "name": "shared-exclusive-lock",
   "version": "0.2.0",
-  "description": "",
+  "description": "Shared read locks and exclusive write locks: Concurrent access for read-only operations, exclusive access for write operations.",
   "homepage": "https://github.com/SebastianSchmidt/shared-exclusive-lock",
   "author": "Sebastian Schmidt <email@sebastian-schmidt.info>",
   "license": "MIT",
