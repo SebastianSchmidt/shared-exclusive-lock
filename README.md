@@ -36,3 +36,13 @@ releaseReadLock2()
 // 7. Receive third read lock.
 // 8. Release third read lock.
 ```
+
+
+## Installation
+
+This is a [Node.js](https://nodejs.org/) module available through the [npm registry](https://www.npmjs.com/).
+You can install the module via the [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+
+```
+$ npm install shared-exclusive-lock --save
+```
